@@ -5,7 +5,7 @@
     class="form-control"
     name="servername"
     [(ngModel)]="name"
-    (ngModelChange)="addNewServer()"
+    (change)="addNewServer()"
   />
 
   <label for="description" type="text">Description</label>
@@ -14,6 +14,6 @@
     name="serverdesc"
     class="form-control"
     [(ngModel)]="description"
-    (ngModelChange)="addBlueprintSever()"
+    (change)="addBlueprintSever()"
   />
 </form>
