@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>{{ element.name }}</h4>
+  </div>
+  <div class="panel-body">
+    <p [ngStyle]="{ color: element.type === 'server' ? 'red' : 'blue' }">
+      {{ element.content }}
+    </p>
+  </div>
+</div>

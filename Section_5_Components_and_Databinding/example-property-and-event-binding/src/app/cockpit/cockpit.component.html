@@ -1,0 +1,19 @@
+<form class="form-control-group">
+  <label for="name" type="text">Server Name</label>
+  <input
+    id="name"
+    class="form-control"
+    name="servername"
+    [(ngModel)]="name"
+    (ngModelChange)="addNewServer()"
+  />
+
+  <label for="description" type="text">Description</label>
+  <input
+    id="description"
+    name="serverdesc"
+    class="form-control"
+    [(ngModel)]="description"
+    (ngModelChange)="addBlueprintSever()"
+  />
+</form>
