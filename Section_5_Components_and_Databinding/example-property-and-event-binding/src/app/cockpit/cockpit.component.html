@@ -1,13 +1,28 @@
 <form class="form-control-group">
   <label for="name" type="text">Server Name</label>
-  <input
+  <!-- <input
     id="name"
     class="form-control"
     name="servername"
     [(ngModel)]="name"
     (change)="addNewServer()"
-  />
+  /> -->
 
+  <!-- Local reference -->
+  <!-- <input id="name" class="form-control" name="servername" #serverNameRef /> 
+  <p>Hey local reference works {{ serverNameRef.value }}</p>
+  <button class="btn btn-danger" (click)="getNameUsingLocalRef(serverNameRef)">
+    Local Reference Test
+  </button> -->
+
+  <!-- Element reference -->
+  <input id="name" class="form-control" name="servername" #serverNameElRef />
+  <button class="btn btn-danger" (click)="getNameUsingElementRef()">
+    Element Reference Test
+  </button>
+
+  <br />
+  <br />
   <label for="description" type="text">Description</label>
   <input
     id="description"

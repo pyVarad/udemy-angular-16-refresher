@@ -23,7 +23,20 @@
       <app-server-element
         *ngFor="let serverElement of serverElements"
         [srvElement]="serverElement"
-      ></app-server-element>
+      >
+        <div class="panel-heading">
+          <h4>{{ serverElement.name }}</h4>
+        </div>
+        <div class="panel-body">
+          <p
+            [ngStyle]="{
+              color: serverElement.type === 'server' ? 'red' : 'blue'
+            }"
+          >
+            {{ serverElement.content }}
+          </p>
+        </div>
+      </app-server-element>
     </div>
   </div>
 </div>
