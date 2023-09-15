@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="panel-title">
+            {{shoppingKartItem.name}}
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="col-sm-6">
+            <img [src]="shoppingKartItem.imageSrc" [alt]="shoppingKartItem.name" class="img-responsive"
+                [style]="{height: '200px'}">
+        </div>
+        <div class="col-sm-6">
+            <div [style]="{margin: '8px'}">
+                {{shoppingKartItem.description}}
+            </div>
+            <button class="btn btn-success btn-block" (click)="addItemHandler(shoppingKartItem)">Add Item</button>
+        </div>
+
+    </div>
+</div>
